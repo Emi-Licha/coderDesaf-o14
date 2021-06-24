@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso de Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1>Ingrese Producto</h1>
+            <br>
+
+            <form id="product-form" enctype="application/x-www-form-urlencoded" method="POST">
+                <!-- Campo nombre del producto -->
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" class="form-control" type="text" name="name" required>
+                </div>
+
+                <!-- Campo precio del producto -->
+                <div class="form-group">
+                    <label for="price">Precio</label>
+                    <input id="price" class="form-control" type="number" step="0.5" name="price" required>
+                </div>
+
+                <!-- Campo url de la foto del producto -->
+                <div class="form-group">
+                    <label for="thumbnail">Foto URL</label>
+                    <input id="thumbnail" class="form-control"  name="thumbnail">
+                </div>
+
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar" class="btn btn-success mt-3">
+            </form>
+            <hr>
+            <button class="btn btn-info mt-3" onclick="location.href = '/api/productos/vista'">Vista handlebars productos</button>
+            <br>
+            <br>
+            <div id="datos"></div>
+
+        </div>
+        <div class="jumbotron">
+            <form onsubmit="return addMessage(this)">
+                <input type="text" id="username" placeholder="Nombre">
+                <input type="text" id="text" placeholder="Deja tu mensaje">
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="messages"></div>
+        </div>
+    </div>
+
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

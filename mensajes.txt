@@ -1,0 +1,10 @@
+[
+  {
+    "author": "Martin",
+    "text": "me encanta la pagina"
+  },
+  {
+    "author": "Emi",
+    "text": "Esta es una alta pagina wachi!"
+  }
+]
