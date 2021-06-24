@@ -2,7 +2,7 @@
   "productos": [
     {
       "name": "Apple",
-      "price": "12",
+      "price": "200",
       "thumbnail": "https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/flash-128.png",
       "id": 1
     }

@@ -6,5 +6,9 @@
   {
     "author": "Emi",
     "text": "Esta es una alta pagina wachi!"
+  },
+  {
+    "author": "Norma",
+    "text": "A mi nieto le encanta la pagina!"
   }
 ]

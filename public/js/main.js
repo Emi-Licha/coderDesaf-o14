@@ -24,7 +24,7 @@ form.addEventListener('submit', event => {
         method: 'POST',
         body: JSON.stringify(data)
     })
-    .then(respuesta => JSON.stringify(respuesta.json()))
+    .then(respuesta => {return respuesta.json})
     .then(productos => {
         form.reset();
         socket.emit('update', 'ok');
