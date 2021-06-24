@@ -17,6 +17,8 @@ form.addEventListener('submit', event => {
     console.log(data)
     fetch('/api/productos/guardar', {
         headers: {
+            "Access-Control-Allow-Origin" : "*", 
+            "Access-Control-Allow-Credentials" : true,
             'Content-Type': 'application/json'
         },
         method: 'POST',

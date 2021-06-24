@@ -5,7 +5,13 @@
       "price": "100",
       "thumbnail": "https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/flash-128.png",
       "id": 1
+    },
+    {
+      "name": "Apple",
+      "price": "100",
+      "thumbnail": "https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/flash-128.png",
+      "id": 2
     }
   ],
-  "id": 1
+  "id": 2
 }
